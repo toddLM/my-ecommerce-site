@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link type="text/css" rel="stylesheet" href="assets/stylesheets/skate.css"/> -->
+    <title>Contact Us</title>
+</head>
+<body>
+    <main id="main">
+        <h1>Contact Us</h1>
+        <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+             Your name: <input type="text" name="customerName"><br/>
+             Your email: <input type="email" name="customerEmail"><br/>
+             Your phone: <input type="tel" name="customerPhone">
+             <input type="radio" name="phoneType" value="cell">Cell
+             <input type="radio" name="phoneType" value="work">Work
+             <input type="radio" name="phoneType" value="home">Home
+             <br />
+
+             Ok to contact me: 
+             <input type="checkbox" name="okToContact" value="phone"> by phone
+             <input type="checkbox" name="okToContact" value="email"> by email
+             <br/>
+             <input type="hidden" name="source" value="ContactForm">
+             Your feedback:</br><textarea name="feedbackText" cols="40" rows="3"></textarea><br />
+             
+    
+             
+</body>
+
+    
+</html>
