@@ -1,58 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Skateboard Site</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="stylesheets/skate.css"/>
-
-    <style>
-        .hero   {
-            height: 724px;
-            background-image: url("https://communityimpact.com/uploads/images/2020/06/19/64027.jpeg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-        }
-    </style>
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
 
 </head>
 
 <body class="bg-dark text-white">
     <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">My Skateboard Site</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="skate.html">Skate</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html#">Login</a>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-              <form action="search.html" enctype="application/x-www-form-urlencoded"
-              method="GET">
-                  <input name="query">
-                  <input type="submit">
-              </form>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">My Skateboard Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Skate
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="products.html">Products</a></li>
+                            <li><a class="dropdown-item" href="#">Specials</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item"> -->
+                    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a> -->
+                    <!-- </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html#">Login</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="bg-dark hero">
-
     </div>
-   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    
+    <br><br><br><br><br><br><br><br><br>
+
+    <div class="container text-dark">
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2">
+            <div class="col">
+                <div class="card h-80">
+                    <img src="images/longboard2.JPG" class="card-img-top h-55" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Longboard</h5>
+                        <p class="card-text">The Longboard is, as the name implies, an extra long deck that allows for easy, fast rolling
+                             and responsive turning performance. These decks have a variety of shape options but are always much longer than
+                              a standard popsicle deck. Longboards generally do not have a kicktail (a concaved tail/nose) so they are not used
+                               to perform tricks. Rather, they offer a feeling more similar to surfing where high-speed and carving are the objective.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80">
+                    <img src="images/Cruiser.JPG" class="card-img-top h-55" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cruiser</h5>
+                        <p class="card-text">The Cruiser deck can have some of the craziest shapes of all skateboard decks. Some refer
+                             to cruisers as a hybrid of a longboard and skateboard, depending on the set-up (trucks, wheels) used with 
+                             the deck. Simple tricks can generally still be performed on a cruiser, but they are designed for comfortably 
+                             “cruising” from point A to B with the ability to do a small ollie up a curb if necessary (they sometimes have a tail/nose).</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80">
+                    <img src="images/popsicle.JPG" class="card-img-top h-55" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Popsicle</h5>
+                        <p class="card-text">The Popsicle deck is currently the standard, modern skateboard deck design. 
+                            This deck is ideal for street or transition (ramp) skateboarding. It has a symmetrical "popsicle stick“ 
+                            shape with a concaved nose and tail that are used to perform tricks.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-80">
+                    <img src="images/shaped.JPG" class="card-img-top h-55" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Shaped</h5>
+                        <p class="card-text">The Shaped deck is a deck that deviates from the standard “popsicle” shaped deck design. 
+                            These decks usually have specially cut designs with a wider or smaller nose/tail than the popsicle. Some tricks,
+                             for example, tricks involving the nose of the board, can not be performed on shaped decks because of their design. 
+                             Therefore, these decks are generally best left to more experienced skaters who have an ideal deck shape/style that they prefer.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+        <br><br><br>
+        <footer>
+            <p>Our address is: <address>Skate Shack | 123 SW Shred Ave. | Portland, OR 97223
+            </address></p>
+            <p>Phone: 555-123-4567</p>
+            <p>email: customerservice@SkateShack.com</p>
+            <p><small>&copy; 2021 Skate Shack - All rights reserved</small></p>
+            
+        </footer>  
 </body>
+
 </html>
