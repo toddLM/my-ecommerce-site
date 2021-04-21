@@ -4,29 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css"> -->
-    <link type="text/css" rel="stylesheet" href="assets/stylesheets/skate.css"/> -->
     <title>Contact Us</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="assets/stylesheets/skate.css"/>
+    
 </head>
-<body>
-    <main id="main">
-        <h1>Contact Us</h1>
-        <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
-             Your name: <input type="text" name="customerName"><br/>
-             Your email: <input type="email" name="customerEmail"><br/>
-             Your phone: <input type="tel" name="customerPhone">
-             <input type="radio" name="phoneType" value="cell">Cell
-             <input type="radio" name="phoneType" value="work">Work
-             <input type="radio" name="phoneType" value="home">Home
-             <br />
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Skateboard Site</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="skate.html">Skate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Specials</a>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact Us</a>
+              </li>
+              <form action="search.html" enctype="application/x-www-form-urlencoded"
+              method="GET">
+                  <input name="query">
+                  <input type="submit">
+              </form>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="bg-dark hero">
 
-             Ok to contact me: 
-             <input type="checkbox" name="okToContact" value="phone"> by phone
-             <input type="checkbox" name="okToContact" value="email"> by email
-             <br/>
-             <input type="hidden" name="source" value="ContactForm">
-             Your feedback:</br><textarea name="feedbackText" cols="40" rows="3"></textarea><br />
-             
+    </div>
+    
+    <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+        <br>
+        Your name: <input type="text" name="customerName"><br/>
+        Your email: <input type="email" name="customerEmail"><br/>
+        Your phone: <input type="tel" name="customerPhone">
+        <input type="radio" name="phoneType" value="cell">Cell
+        <input type="radio" name="phoneType" value="work">Work
+        <input type="radio" name="phoneType" value="home">Home
+        <br />
+        <br>
+        Ok to contact me: 
+        <input type="checkbox" name="okToContact" value="phone"> by phone
+        <input type="checkbox" name="okToContact" value="email"> by email
+        <br/>
+        <input type="hidden" name="source" value="ContactForm">
+        <br>
+        Your feedback:</br><textarea name="feedbackText" cols="40" rows="3"></textarea><br />
     
              
 </body>
