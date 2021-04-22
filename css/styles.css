@@ -3,7 +3,7 @@
 }
 
 #main {
-    float: right;
+    /* float: right; */
     width: 70%;
     margin-bottom: 20px;
 }
@@ -56,9 +56,9 @@
 
 
 
-fieldset{
+/* fieldset{
     border-color: floralwhite;
-    border-width: 3px;
+    border-width: 2px;
     border-style:solid;
-}
+} */
 
