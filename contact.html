@@ -76,8 +76,9 @@
 <br><br><br>
   <main id="main">
     <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
-      <fieldset>
-        <h6>Contact Information</h6>
+      <fieldset class="m-5">
+        <h5>Contact Information</h5>
+        <br>
         <p>
           <label for="nameField">*Your name: </label>
           <input id="nameField" type="text" required minlength="3" maxlength="25" name="customerName">
@@ -91,8 +92,6 @@
         </p>
         <p>
           <label>Phone type: </label>
-        </p>
-
         <label><input type="radio" name="phoneType" value="cell">Cell</label>
         <label><input type="radio" name="phoneType" value="work">Work</label>
         <label><input type="radio" name="phoneType" value="home">Home</label>
@@ -101,12 +100,13 @@
           <label><input type="checkbox" name="okToContact" value="phone"> by phone</label>
           <label><input type="checkbox" name="okToContact" value="email"> by email</label>
         </p>
-        <input type="submit" value="SendContact">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <!-- <input type="submit" value="SendContact"> -->
       </fieldset>
     </form>
 
     <br><br><br>
-    <footer>
+    <footer class="m-5">
       <p>Our address is:
       <address>Skate Shack | 123 SW Shred Ave. | Portland, OR 97223
       </address>
